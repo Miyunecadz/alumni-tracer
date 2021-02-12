@@ -1,0 +1,303 @@
+<%- include('./layout/header.ejs') %>
+<%- include('./layout/navbar.ejs') %>
+
+
+
+<div class="container">
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            <div class="row  d-flex justify-content-center">
+                <div class="col-xl-8 col-md-12">
+                    <div class="card roundeds user-card-full">
+                        <div class="row m-l-0 m-r-0">
+                            <div class="col-sm-4 bg-c-lite-green user-profile">
+                                <div class="card-block text-center text-white">
+                                    <div class="m-b-20 rounded-circle "> 
+                                        <svg class="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                          </svg>
+                                    </div>
+                                    <span class="f-w-600">Florentino Gozo</span>
+                                    <p style="font-size: small;">07292020-1379</p>
+                                    <p class="">
+                                        <a href="" class="nav-link text-light">
+                                            <svg width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                                            </svg>
+                                            Edit
+                                        </a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-block">
+                                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Personal Information</h6>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="m-b-10 f-w-600">Email</p>
+                                            <h6 class="text-muted f-w-400">jxxxx@gmail.com</h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="m-b-10 f-w-600">Phone</p>
+                                            <h6 class="text-muted f-w-400">09xxxxxxxx</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <p class="m-b-10 f-w-600">Address</p>
+                                            <h6 class="text-muted f-w-400">Nahaong, Libagon, Southern Leyte</h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <p class="m-b-10 f-w-600">Course</p>
+                                            <h6 class="text-muted f-w-400">Bachelor of Science and Information Technology</h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="m-b-10 f-w-600">Major</p>
+                                            <h6 class="text-muted f-w-400">Programming</h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="m-b-10 f-w-600">Year Graduated</p>
+                                            <h6 class="text-muted f-w-400">2017-2018</h6>
+                                        </div>
+                                    </div>
+                                    <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Social Account</h6>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <p class="m-b-10 f-w-600">Facebook</p>
+                                            <h6 class="text-muted f-w-400">Florentino Gozo</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f9f9fa
+    }
+
+    .padding {
+        padding: 3rem !important
+    }
+
+    .user-card-full {
+        overflow: hidden
+    }
+
+    .card {
+        border-radius: 5px;
+        -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+        box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+        border: none;
+        margin-bottom: 30px
+    }
+
+    .m-r-0 {
+        margin-right: 0px
+    }
+
+    .m-l-0 {
+        margin-left: 0px
+    }
+
+    .user-card-full .user-profile {
+        border-radius: 5px 0 0 5px
+    }
+
+    .bg-c-lite-green {
+        /* background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f)); */
+        background: linear-gradient(to right, #ee5a6f, #f29263)
+    }
+
+    .user-profile {
+        padding: 20px 0
+    }
+
+    .card-block {
+        padding: 1.25rem
+    }
+
+    .m-b-25 {
+        margin-bottom: 25px
+    }
+
+    .img-radius {
+        border-radius: 5px
+    }
+
+    h6 {
+        font-size: 14px
+    }
+
+    .card .card-block p {
+        line-height: 25px
+    }
+
+    @media only screen and (min-width: 1400px) {
+        p {
+            font-size: 14px
+        }
+    }
+
+    .card-block {
+        padding: 1.25rem
+    }
+
+    .b-b-default {
+        border-bottom: 1px solid #e0e0e0
+    }
+
+    .m-b-20 {
+        margin-bottom: 20px
+    }
+
+    .p-b-5 {
+        padding-bottom: 5px !important
+    }
+
+    .card .card-block p {
+        line-height: 25px
+    }
+
+    .m-b-10 {
+        margin-bottom: 10px
+    }
+
+    .text-muted {
+        color: #919aa3 !important
+    }
+
+    .b-b-default {
+        border-bottom: 1px solid #e0e0e0
+    }
+
+    .f-w-600 {
+        font-weight: 600
+    }
+
+    .m-b-20 {
+        margin-bottom: 20px
+    }
+
+    .m-t-40 {
+        margin-top: 20px
+    }
+
+    .p-b-5 {
+        padding-bottom: 5px !important
+    }
+
+    .m-b-10 {
+        margin-bottom: 10px
+    }
+
+    .m-t-40 {
+        margin-top: 20px
+    }
+
+    .user-card-full .social-link li {
+        display: inline-block
+    }
+
+    .user-card-full .social-link li a {
+        font-size: 20px;
+        margin: 0 10px 0 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out
+    }
+</style>
+
+<!-- 
+<link rel="stylesheet" href="stylesheets/tailwind.css">
+
+<div class="sm:container">
+    <div class="grid md:grid-cols-2 md:gap-1 md:my-5">
+        <div class="bg-gray-100 md:bg-transparent">
+            <svg class="w-30" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+        </div>
+
+        <div class="m-2">
+            <div class="relative">
+                <a href="" class="absolute inset-y-0 right-0 m-2">Edit</a>
+            </div>
+            <div class="grid">
+                <div class="my-2 ">
+                    <span> <strong>Personal Information</strong> </span>
+                    <hr class="">
+                    <div class="m-2.5">
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>ID Number</span>
+                            <span class="mr-2">:</span>
+                            <span>07292020-1379</span>
+                        </div>
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Name</span>
+                            <span class=" mr-2">:</span>
+                            <span>June Vic Cadayona</span>
+                        </div>
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Course</span>
+                            <span class=" mr-2">:</span>
+                            <span>BS Information Technology</span>
+                        </div>
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Major</span>
+                            <span class="mr-2">:</span>
+                            <span>Programming</span>
+                        </div>
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Year Graduated</span>
+                            <span class=" mr-2">:</span>
+                            <span>2019-06-21</span>
+                        </div>
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Address</span>
+                            <span class=" mr-2">:</span>
+                            <span>Bogo, Tomas Oppus, Southern Leyte</span>
+                        </div>
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Email Address</span>
+                            <span class=" mr-2">:</span>
+                            <span>jvcadz.dev@outlook.com</span>
+                        </div>
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Gender</span>
+                            <span class=" mr-2">:</span>
+                            <span>Male</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-2">
+                    <span> <strong>Social Media Account</strong> </span>
+                    <hr class="">
+                    <div class="m-2.5 md:m-0">
+                        <div class="p-2.5  border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Facebook</span>
+                            <span class=" mr-2">:</span>
+                            <span>JV Cadayona</span>
+                        </div>
+                        <div class="p-2.5 border-b-2 border-blue-200 md:p-1 md:border-0">
+                            <span>Tiktok</span>
+                            <span class=" mr-2">:</span>
+                            <span>JV Cadayona</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> -->
