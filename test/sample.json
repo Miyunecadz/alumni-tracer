@@ -1,0 +1,63 @@
+{
+    "errors": [{
+        "value": "",
+        "msg": "Invalid value",
+        "param": "lastname",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "firstname",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "province",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "municipality",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "purok",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "contact",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "contact",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "course",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "major",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "yeargrad",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "yeargrad",
+        "location": "body"
+    }, {
+        "value": "",
+        "msg": "Invalid value",
+        "param": "companyname",
+        "location": "body"
+    }]
+}

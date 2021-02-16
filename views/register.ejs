@@ -1,0 +1,196 @@
+<%- include('./layout/header.ejs') %>
+
+<div class="container">
+    <div class="my-5">
+        <center>
+            <img src="./images/th2.png" width="100rem" alt="">
+            <h2 class="text-center"> <strong>Alumni Tracer Registration</strong></h2>
+        </center>
+        <div class="row justify-content-center">
+            <div class="col-sm-7 mt-5 text-light">
+
+                <div class="row roundeds content py-3">
+                    <form action="/register" id="registrationform" method="post">
+                        <div class="form-group col-sm-6">
+                            <label for="idnumber">ID Number <span class="text-danger">*</span> </label>
+                            <input type="text" name="idnumber" id="idnumber" class="form-control">
+                        </div>
+                        <h6 class="mt-3">Name</h6>
+                        <div class="form-group">
+                            <label for="lastname">Lastname <span class="text-danger">*</span></label>
+                            <input type="text" name="lastname" id="lastname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname">Firstname <span class="text-danger">*</span></label>
+                            <input type="text" name="firstname" id="firstname" class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="middlename">Middlename </label>
+                                <input type="text" name="middlename" id="middlename" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="suffix">Suffix</label>
+                                <input type="text" name="suffix" id="suffix" class="form-control">
+                            </div>
+                        </div>
+                        <h6 class="mt-3">Address</h6>
+                        <div class="form-group">
+                            <label for="province">Province <span class="text-danger">*</span></label>
+                            <input type="text" name="province" id="province" class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="municipality">Municipality <span class="text-danger">*</span></label>
+                                <input type="text" name="municipality" id="municipality" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="purok">Purok <span class="text-danger">*</span></label>
+                                <input type="text" name="purok" id="purok" class="form-control">
+                            </div>
+                        </div>
+                        <p class="mt-4"></p>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="contact">Contact Number <span class="text-danger">*</span></label>
+                                <input type="number" name="contact" id="contact" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="gender">Gender <span class="text-danger">*</span></label>
+                                <select name="gender" id="gender" class="form-control">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="mt-4"></p>
+                        <div class="form-group">
+                            <label for="course">Course <span class="text-danger">*</span></label>
+                            <input type="text" name="course" id="course" class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="major">Major <span class="text-danger">*</span></label>
+                                <input type="text" name="major" id="major" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="yeargrad">Year Graduated <span class="text-danger">*</span></label>
+                                <input type="date" name="yeargrad" id="yeargrad" class="form-control">
+                            </div>
+                        </div>
+                        <h6 class="mt-3">Social Account</h6>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="text" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="facebook">Facebook Link</label>
+                            <input type="text" name="facebook" id="facebook" class="form-control">
+                        </div>
+                        <div class="custom-card">
+                            <div class="card mt-5  text-dark">
+                                <div class="card-header ">
+                                    <h6 class="">Company Pofile <span style="font-size: smaller;"
+                                            class="text-warning">(If
+                                            you're unemployed kindly input "None" or "N/A")</span> </h6>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label for="companyname">Company Name <span class="text-danger">*</span></label>
+                                    <input type="text" name="companyname" id="companyname" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="companyaddress">Company Address</label>
+                                    <input type="text" name="companyaddress" id="companyaddress" class="form-control">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-6">
+                                        <label for="companyemail">Company Email </label>
+                                        <input type="email" name="companyemail" id="companyemail" class="form-control">
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label for="companycontact">Company Contact Number </label>
+                                        <input type="text" name="companycontact" id="companycontact" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="companyposition">Company Position</label>
+                                    <input type="text" name="companyposition" id="companyposition" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-card">
+                            <div class="card mt-2  text-dark">
+                                <div class="card-header ">
+                                    <h6 class="">Alumni Account</h6>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label for="username">Username<span class="text-danger">*</span></label>
+                                    <input type="text" name="username" id="username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password<span class="text-danger">*</span></label>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="mt-4"></p>
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn  col-sm-6 text-light">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        /* background-image: linear-gradient(to bottom, #00327c, #005a9f, #0081b9, #00a8c9, #3eced5); */
+        /* background-image: linear-gradient(to top, #00327c, #7a347f, #b93f6e, #db6555, #e19745); */
+        /* background-image: linear-gradient(to right top, #032087, #1d389c, #3150b1, #4468c5, #5880d8, #8986df, #b18be3, #d591e3, #ff87be, #ff8c8e, #ffa260, #e9be43); */
+    }
+
+    .content {
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    button {
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(10.5px);
+        -webkit-backdrop-filter: blur(10.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    button:hover {
+        background: rgba(74, 144, 226, 0.70);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(15.0px);
+        -webkit-backdrop-filter: blur(15.0px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .card-content {
+        /* background: rgba(255, 255, 255, 0.25); */
+        /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+        /* backdrop-filter: blur(4px); */
+        /* -webkit-backdrop-filter: blur(4px); */
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 1rem;
+    }
+
+</style>
